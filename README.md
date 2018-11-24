@@ -34,3 +34,6 @@
 
 3. 配置完成，重启 typora 文档内容标题就会有自动编号了。
 
+## 参考链接
+
+- https://support.typora.io/Auto-Numbering/
