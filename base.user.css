@@ -1,43 +1,51 @@
+/**
+ * author: LPZ
+ * email: lpzmail@163.com
+ */
+h1, h2, h3, h4, strong {
+  font-weight: 600;
+}
+
 /* 添加自动序号样式 */
 #write {
-  counter-reset: h2
+  counter-reset: h2;
 }
 
 h1 {
-  counter-reset: h2
+  counter-reset: h2;
 }
 
 h2 {
-  counter-reset: h3
+  counter-reset: h3;
 }
 
 h3 {
-  counter-reset: h4
+  counter-reset: h4;
 }
 
 h4 {
-  counter-reset: h5
+  counter-reset: h5;
 }
 
 h5 {
-  counter-reset: h6
+  counter-reset: h6;
 }
 
 #write h2:before {
   counter-increment: h2;
-  content: counter(h2) ". "
+  content: counter(h2) ". ";
 }
 
 #write h3:before,
 h3.md-focus.md-heading:before { /** override the default style for focused headings */
   counter-increment: h3;
-  content: counter(h2) "."counter(h3) ". "
+  content: counter(h2) "."counter(h3) ". ";
 }
 
 #write h4:before,
 h4.md-focus.md-heading:before {
   counter-increment: h4;
-  content: counter(h2) "."counter(h3) "."counter(h4) ". "
+  content: counter(h2) "."counter(h3) "."counter(h4) ". ";
 }
 
 #write h5:before,
@@ -106,6 +114,11 @@ h6.md-focus:before {
 kbd {
   box-shadow: inset 0 -2px 0 #c6cbd1;
   background-color: white;
+}
+
+/* 行内代码高亮颜色 */
+code {
+  color: #f50059;
 }
 
 /* TOC 中隐藏 H1 和 H6 */
@@ -211,4 +224,8 @@ kbd {
 .outline-content .outline-h6 .outline-label:before {
   counter-increment: outline-h6;
   content: counter(outline-h2) "."counter(outline-h3) "."counter(outline-h4) "."counter(outline-h5) "."counter(outline-h6) ". ";
+}
+
+#sidebar-content {
+  font-family: '楷体';
 }
