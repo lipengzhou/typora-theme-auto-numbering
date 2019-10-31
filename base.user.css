@@ -2,6 +2,7 @@
  * author: LPZ
  * email: lpzmail@163.com
  */
+
 h1, h2, h3, h4, strong {
   font-weight: 600;
 }
@@ -116,11 +117,6 @@ kbd {
   background-color: white;
 }
 
-/* 行内代码高亮颜色 */
-code {
-  color: #f50059;
-}
-
 /* TOC 中隐藏 H1 和 H6 */
 .md-toc-h1, .md-toc-h6 {
   display: none;
@@ -224,8 +220,4 @@ code {
 .outline-content .outline-h6 .outline-label:before {
   counter-increment: outline-h6;
   content: counter(outline-h2) "."counter(outline-h3) "."counter(outline-h4) "."counter(outline-h5) "."counter(outline-h6) ". ";
-}
-
-#sidebar-content {
-  font-family: '楷体';
 }
