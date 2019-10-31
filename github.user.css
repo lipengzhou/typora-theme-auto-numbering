@@ -1,5 +1,6 @@
-body {
-  /*color: #4d626e;*/
+/* 行内代码高亮颜色 */
+code {
+  color: #f50059;
 }
 
 h1, h2, h3, h4, strong {
