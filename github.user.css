@@ -11,7 +11,7 @@ content {
 }
 
 #typora-sidebar {
-  background-color: #fff;
+  background-color: #fff !important;
 }
 
 /* 行内代码高亮颜色 */
